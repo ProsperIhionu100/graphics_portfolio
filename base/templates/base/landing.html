@@ -1,0 +1,365 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+  <section class='lg:flex' id="home">
+    <div class='pt-2 lg:pt-20 px-4 lg:px-0 lg:pb-0 pb-2'>
+      <hr class="w-30  ml-0 border-t-8 border-[#7051ef] my-6 md:mx-auto lg:mx-0" />
+      <h1
+        class='md:text-7xl space-y-2 text-[#3a395e] text-4xl text-left md:text-center lg:text-left lg:text-7xl font-black mt-10'>
+        I'm Agozie Ngozika, a <span class='text-[#7051ef]'>Graphics Designer</span>
+      </h1>
+
+      <p
+        class='text-2xl mt-4 md:text-4xl lg:text-2xl lg:mt-10 text-left md:text-center lg:text-left text-[#3a395e] font-medium'>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br /> Ad reiciendis minus minima, quibusdam animi
+      </p>
+      <div class=''>
+        <div class='grid grid-cols-1 md:grid-cols-2 sm:gap-4 lg:w-130 mt-6 w-full'>
+          <div
+            class=' md:mt-8 bg-[#7051ef] font-bold p-2 mb-4 lg:mb-0 md:p-6 rounded-xl flex justify-center cursor-pointer text-2xl text-white shadow-purple-300 shadow-2xl'>
+            <a href="/#contact"><h1>Contact me</h1></a>
+          </div>
+          <div
+            class='md:mt-8 bg-[#fff] text-[#7051ef] font-bold p-2 md:p-6 rounded-xl cursor-pointer flex justify-center text-2xl shadow-2xl'>
+            <a href="/#projects"><p>Explore Portfolio</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='mt-10 lg:mt-0'>
+      <img src="{% static "images/heroportf.png" %} " height="1000" width="1000" alt="Brand" priority />
+    </div>
+
+  </section>
+
+  <div>
+    <div class="px-4 lg:px-0" id="about">
+      <hr class="w-30  ml-0 border-t-8 border-[#7051ef] my-6 md:mx-auto lg:mx-0" />
+
+      <h1 class="text-4xl font-bold mt-8 text-[#3a395e]">My Expertise</h1>
+
+      <p class="mt-4 text-xl">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque quos
+        atque <br /> accusantium recusandae similique excepturi, modi{" "}
+      </p>
+    </div>
+    <div class="lg:flex justify-between md:grid md:grid-cols-2 gap-4">
+
+      <div class="max-w-md bg-white rounded-[40px] shadow-2xl p-10 pt-20 text-center relative mt-20">
+        <!-- {/* Full styled image with shadow baked in */} -->
+        <img src="{% static "images/branding.svg" %}"  alt="title" width={150}
+          height={130} class="absolute -top-14 left-1/2 transform -translate-x-1/2 rounded-3xl" />
+
+        <h3 class="text-2xl md:text-3xl font-extrabold pt-10 text-[#2c2e3f] mt-4">
+          Branding
+        </h3>
+
+        <p class="text-lg md:text-xl text-[#666] font-medium mt-4 leading-relaxed p-">
+          Professional visual branding for impactful recognition.
+        </p>
+      </div>
+      <div class="max-w-md bg-white rounded-[40px] shadow-2xl p-10 pt-20 text-center relative mt-20">
+        <!-- {/* Full styled image with shadow baked in */} -->
+        <img src=" {% static "images/ui-ux.svg" %} "  alt="title" width={150}
+          height={130} class="absolute -top-14 left-1/2 transform -translate-x-1/2 rounded-3xl" />
+
+        <h3 class="text-2xl md:text-3xl font-extrabold pt-10 text-[#2c2e3f] mt-4">
+          UI/UX Design
+        </h3>
+
+        <p class="text-lg md:text-xl text-[#666] font-medium mt-4 leading-relaxed p-">
+          User-centric designs that convert and engage.
+        </p>
+      </div>
+      <div class="max-w-md bg-white rounded-[40px] shadow-2xl p-10 pt-20 text-center relative mt-20">
+        <!-- {/* Full styled image with shadow baked in */} -->
+        <img src=" {% static "images/design.svg" %}"  alt="title" width={150}
+          height={130} class="absolute -top-14 left-1/2 transform -translate-x-1/2 rounded-3xl" />
+
+        <h3 class="text-2xl md:text-3xl font-extrabold pt-10 text-[#2c2e3f] mt-4">
+          Web Development
+        </h3>
+
+        <p class="text-lg md:text-xl text-[#666] font-medium mt-4 leading-relaxed p-">
+         High-performance websites built for growth.
+        </p>
+      </div>
+     
+    </div>
+    <div class="flex justify-center mt-10">
+      <button
+        class="text-xl shadow-2xl shadow-purple-400 font-semibold me bg-[#7051ef] p-2 py-5 text-white px-10 rounded-3xl">
+        <a href="/#contact"><h1>Contact</h1></a>
+      </button>
+    </div>
+
+  </div>
+
+      <div id="projects">
+      <div>
+        <div class='pt-20 grid lg:grid-cols-2 ml-4 lg:ml-0'>
+
+          <div>
+            <hr class="w-30  ml-0 border-t-8 border-[#7051ef] my-6 md:mx-auto lg:mx-0"/>
+            <h1 class="font-bold text-4xl ">My Portfolio</h1>
+          </div>
+
+          <div>
+            <p class='mt-4 text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus <br /> quod dolores voluptates perspiciatis minima nobis modi?</p>
+          </div>
+
+        </div>
+
+        <!-- {/* <div class='bg-green-400 rounded overflow-hidden'>
+          <Image
+          src="/banner.png"
+          width={800}
+          height={800}
+          alt='Me'
+          />
+          <div>
+            <h2>fintech mobile app redesign</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam adipisci illo, minus nostrum labore accusantium.</p>
+          </div>
+        </div> */} -->
+
+        <!-- {/* <div class=" m-3 bg-white rounded-3xl overflow-hidden shadow-xl">
+            <div>
+                <Image
+                  src="/banner.png"
+                  width={800}
+                  height={800}
+                  alt='Me'
+                  class="h-80 w-full object-cover"
+                />
+            </div>
+            <div class="m-5"> 
+                <h3 class=" font-bold text-3xl mt-5 text-black ">
+                    <a href="#">
+                        fintech mobile app redesign
+                    </a>
+                </h3>
+                <p class="mt-2 text-xl font-medium text-[#3a395e]">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique corrupti dolor consequatur nulla? Quas veniam porro unde. &#8230;
+                </p>
+            </div>
+        </div> */} -->
+    <div class='grid lg:grid-cols-3 gap-4 mt-10'>
+      {% for comp in company %}
+      <div class="bg-white rounded-3xl overflow-hidden shadow-xl mx-4 md:mx-0 ">
+        <!-- {/* Image */} -->
+        <div>
+          <a href="{% url "company" comp.slug %}"><img
+            src="{{comp.image.url}}"
+            width="800"
+            height="600"
+            alt="Project"
+            class="w-full h-80 object-cover transform transition-transform duration-500 hover:scale-110"
+          /></a>
+        </div>
+
+        <!-- {/* Content */} -->
+        <div class="p-6">
+          <!-- {/* Tag */} -->
+
+          <!-- {/* Title */} -->
+          <h3 class="text-3xl font-bold text-gray-900 mb-3 hover:text-[#7051ef]">
+            {{comp.name}}
+          </h3>
+
+          <!-- {/* Description */} -->
+          <p class="text-[#3a395e] text-xl leading-relaxed mb-6">
+          {{comp.desc}}
+          </p>
+
+          <!-- {/* CTA */} -->
+          <a
+            href="{% url "company" comp.slug %}"
+            class="inline-flex items-center text-[#7051ef] font-semibold hover:underline group"
+          >
+            view case study
+            <svg class="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+          </a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+        
+      </div>
+    </div>
+
+<!-- <section class="bg-white py-16 px-6 md:px-20 mt-10" id='contact'>
+      <div class="lg:flex  justify-between">
+        {/* Left Section */}
+        <div class='   w-100'>
+          <div class="mb-4">
+            <hr class="w-30  ml-0 border-t-8 border-[#7051ef] my-6 md:mx-auto lg:mx-0"/>
+            <h2 class="text-7xl font-bold text-gray-900">let's work together</h2>
+          </div>
+          <p class="text-gray-600 mb-6 mt-10 text-xl">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis scelerisque purus eu quis lacus, nibh pharetra elit.
+          </p>
+
+          <div class="space-y-4 text-xl">
+            <div class="flex items-center gap-3">
+              <Mail class="text-[#7051ef] w-8 h-8" />
+              <span>hello@brandfolio.com</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <Phone class="text-[#7051ef] w-8 h-8" />
+              <span>+1 (450) 780 9317</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Right Section - Form */}
+        <form class="bg-[#F0ECFD] rounded-3xl p-10 space-y-8 w-full max-w-2xl">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="full name"
+                class="w-full p-5 pl-14 rounded-xl bg-white text-lg focus:outline-none"
+              />
+              <User class="absolute top-5 left-5 text-gray-400 w-6 h-6" />
+            </div>
+
+            <div class="relative">
+              <input
+                type="email"
+                placeholder="email address"
+                class="w-full p-5 pl-14 rounded-xl bg-white text-lg focus:outline-none"
+              />
+              <MailIcon class="absolute top-5 left-5 text-gray-400 w-6 h-6" />
+            </div>
+
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="company"
+                class="w-full p-5 pl-14 rounded-xl bg-white text-lg focus:outline-none"
+              />
+              <Briefcase class="absolute top-5 left-5 text-gray-400 w-6 h-6" />
+            </div>
+
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="subject"
+                class="w-full p-5 pl-14 rounded-xl bg-white text-lg focus:outline-none"
+              />
+              <Tag class="absolute top-5 left-5 text-gray-400 w-6 h-6" />
+            </div>
+          </div>
+
+          <textarea
+            rows={5}
+            placeholder="message"
+            class="w-full p-5 rounded-xl bg-white text-lg focus:outline-none"
+          />
+
+          <button
+            type="submit"
+            class="bg-[#7051ef] text-white font-semibold text-lg px-8 py-4 rounded-xl hover:bg-purple-700 transition"
+          >
+            send message
+          </button>
+
+          <div class="border-t pt-6 mt-6">
+            <p class="mb-4 font-medium text-gray-600 text-base">follow me on social media:</p>
+            <div class="flex gap-5 text-[#7051ef] text-2xl">
+              <a href="#"><FaFacebookF /></a>
+              <a href="#"><FaTwitter /></a>
+              <a href="#"><FaInstagram /></a>
+              <a href="#"><FaDribbble /></a>
+              <a href="#"><FaLinkedinIn /></a>
+              <a href="#"><FaBehance /></a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section> -->
+
+    <section class="bg-white py-16 px-6 md:px-20 mt-10" id="contact">
+  <div class="lg:flex justify-between">
+    
+    <!-- Left Section -->
+    <div class="w-full lg:w-96 mb-10 lg:mb-0">
+      <div class="mb-4">
+        <hr class="w-28 border-t-8 border-[#7051ef] my-6" />
+        <h2 class="text-7xl md:text-7xl font-bold text-gray-900">let's work together</h2>
+      </div>
+      <p class="text-gray-600 mb-6 mt-10 text-xl">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis scelerisque purus eu quis lacus, nibh pharetra elit.
+      </p>
+      <div class="space-y-4 text-xl">
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-envelope text-[#7051ef] w-8 h-8"></i>
+          <span>hello@brandfolio.com</span>
+        </div>
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-phone text-[#7051ef] w-8 h-8"></i>
+          <span>+1 (450) 780 9317</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Section - Form -->
+    <form class="bg-[#F0ECFD] rounded-3xl p-10 space-y-8 w-full max-w-2xl" method="POST" action="">
+        {% csrf_token %}
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="relative">
+          <input type="text" placeholder="full name"
+            class="w-full p-5 pl-14 rounded-xl bg-white text-lg focus:outline-none" name="name">
+          <i class="fa-solid fa-user absolute top-5 left-5 text-gray-400 w-6 h-6"></i>
+        </div>
+
+        <div class="relative">
+          <input type="email" placeholder="email address" name="email"
+            class="w-full p-5 pl-14 rounded-xl bg-white text-lg focus:outline-none">
+          <i class="fa-solid fa-envelope absolute top-5 left-5 text-gray-400 w-6 h-6"></i>
+        </div>
+
+        <div class="relative">
+          <input type="text" placeholder="company" name="company"
+            class="w-full p-5 pl-14 rounded-xl bg-white text-lg focus:outline-none">
+          <i class="fa-solid fa-briefcase absolute top-5 left-5 text-gray-400 w-6 h-6"></i>
+        </div>
+
+        <div class="relative">
+          <input type="text" placeholder="subject" name="subject"
+            class="w-full p-5 pl-14 rounded-xl bg-white text-lg focus:outline-none">
+          <i class="fa-solid fa-tag absolute top-5 left-5 text-gray-400 w-6 h-6"></i>
+        </div>
+      </div>
+
+      <textarea rows="5" placeholder="message" name="message"
+        class="w-full p-5 rounded-xl bg-white text-lg focus:outline-none"></textarea>
+
+      <button type="submit"
+        class="bg-[#7051ef] text-white font-semibold text-lg px-8 py-4 rounded-xl hover:bg-[#7051ef] transition">
+        send message
+      </button>
+
+      <div class="border-t pt-6 mt-6">
+        <p class="mb-4 font-medium text-gray-600 text-base">follow me on social media:</p>
+        <div class="flex gap-5 text-[#7051ef] text-2xl">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-dribbble"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-behance"></i></a>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+{% endblock content %}

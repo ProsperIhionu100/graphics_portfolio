@@ -1,0 +1,25 @@
+<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="180" height="180" fill="#E5E1FF"/>
+<path d="M23 50.69C23 38.1587 33.1587 28 45.69 28H133.998C146.529 28 156.688 38.1587 156.688 50.69V129.31C156.688 141.841 146.529 152 133.998 152H45.69C33.1587 152 23 141.841 23 129.31V50.69Z" fill="white"/>
+<circle cx="36.6638" cy="41.6638" r="3.13252" fill="#DDD7F3"/>
+<circle cx="45.694" cy="41.6638" r="3.13252" fill="#DDD7F3"/>
+<circle cx="54.7243" cy="41.6638" r="3.13252" fill="#DDD7F3"/>
+<line x1="65.3953" y1="57.7395" x2="65.3953" y2="136.086" stroke="#E7E3F7" stroke-width="2.76517" stroke-linecap="round"/>
+<line x1="45.3158" y1="58.6612" x2="35.3039" y2="58.6612" stroke="#E7E3F7" stroke-width="4.60862" stroke-linecap="round"/>
+<line x1="51.1644" y1="66.9567" x2="35.3043" y2="66.9566" stroke="#7051EF" stroke-width="4.60862" stroke-linecap="round"/>
+<line x1="45.3158" y1="75.2523" x2="35.3039" y2="75.2523" stroke="#E7E3F7" stroke-width="4.60862" stroke-linecap="round"/>
+<line x1="52.1644" y1="83.3043" x2="35.7731" y2="83.3043" stroke="#E7E3F7" stroke-width="4.60862" stroke-linecap="round"/>
+<line x1="46.2914" y1="91.8434" x2="35.3048" y2="91.8434" stroke="#E7E3F7" stroke-width="4.60862" stroke-linecap="round"/>
+<rect x="78.6689" y="56.3569" width="33.7832" height="7.05319" rx="3.52659" fill="#D1C9EC"/>
+<rect x="115.357" y="56.3569" width="20.5637" height="7.05319" rx="3.52659" fill="#7051EF"/>
+<rect x="78.6689" y="68.7002" width="20.5637" height="7.05319" rx="3.52659" fill="#7051EF"/>
+<rect x="78.6689" y="81.043" width="33.7832" height="7.05319" rx="3.52659" fill="#D1C9EC"/>
+<rect x="78.6689" y="105.729" width="20.5637" height="7.05319" rx="3.52659" fill="#D1C9EC"/>
+<rect x="102.139" y="105.729" width="42.5962" height="7.05319" rx="3.52659" fill="#D1C9EC"/>
+<rect x="78.6689" y="118.072" width="36.7209" height="7.05319" rx="3.52659" fill="#D1C9EC"/>
+<rect x="78.6689" y="130.416" width="50.5524" height="7.05319" rx="3.52659" fill="#D1C9EC"/>
+<rect x="118.296" y="118.072" width="15.4228" height="7.05319" rx="3.52659" fill="#7051EF"/>
+<rect x="78.6689" y="93.3862" width="48.4715" height="7.05319" rx="3.52659" fill="#7051EF"/>
+<rect x="115.357" y="81.043" width="20.5637" height="7.05319" rx="3.52659" fill="#D1C9EC"/>
+<rect x="102.139" y="68.7002" width="43.3306" height="7.05319" rx="3.52659" fill="#D1C9EC"/>
+</svg>

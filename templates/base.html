@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <a rel="icon" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href=" {% if debug %}{% static "dist/styles.css" %}{% else %}{% static "dist/styles.min.css" %}{% endif %} ">
+    <title>{% block title %}My amazing site{% endblock %}</title>
+      <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        </style>
+</head>
+
+<body class="flex min-h-screen flex-col container mx-auto font-plus">
+
+<header class="p-8">
+    <section class="flex justify-between">
+        <img
+            src="{% static "images/logobr.svg" %}"
+            height="230" width="230" alt="Brand" onclick="window.location.href='/'" />
+        <div class="text-xl p-4 hidden text-[#3a395e] font-medium pt-4 px-8 w-150 lg:flex flex-row justify-between">
+            <!-- <p class="bg-purple-100 rounded-lg text-[#7051ef] px-3">Home</p>
+            <p>About</p>
+            <p>Portfolio</p>
+            <p>Contact</p>
+            <p>Service</p> -->
+
+            <a href="/#home" class="text-gray-700 hover:text-purple-600 font-medium">
+            Home
+            </a>
+            <a href="/#about" class="text-gray-700 hover:text-purple-600 font-medium">
+            About
+            </a>
+            <a href="/#projects" class="text-gray-700 hover:text-purple-600 font-medium">
+            Projects
+            </a>
+        </div>
+
+        <button
+            class="hidden lg:inline-block text-xl shadow-2xl shadow-purple-400 font-semibold bg-[#7051ef] p-2 py-5 text-white px-10 rounded-3xl">
+            <a href="/#contact">Contact</a>
+        </button>
+
+        <!-- <div class="lg:hidden"> -->
+        <!-- {SHEET_SIDES.map((side) => ( -->
+        <!-- <div>
+                <div>
+                    <Button class="mt-2 text-2xl hover:bg-purple-600 text-white bg-[#7051ef] ">☰</Button>
+                </div>
+                <div>
+                    <div class="p-4 mt-20 text-2xl text-purple-400 bg-purple-100 rounded-xl">Home</div>
+                    <div class="p-4 text-2xl">About</div>
+                    <div class="p-4 text-2xl">Portfolio</div>
+                    <div class="p-4 text-2xl">Contact</div>
+                    <div class="p-4 text-2xl">Service</div>
+                </div>
+                </div> -->
+        <!-- ))} -->
+        <!-- </div> -->
+
+        <div class="lg:hidden">
+            <!-- Hamburger Button -->
+            <button id="openMenuBtn" class="mt-2 text-2xl hover:bg-purple-600 text-white bg-[#7051ef] px-4 py-2 rounded">
+            ☰
+            </button>
+
+            <!-- Backdrop (Transparent or Light) -->
+            <div id="menuBackdrop" class="fixed inset-0 bg-white bg-opacity-10 hidden z-40 cursor-pointer"></div>
+
+            <!-- Drawer -->
+            <div id="menuDrawer"
+            class="fixed top-0 left-0 h-full w-3/4 bg-white transform -translate-x-full transition-transform duration-300 z-50 p-6 shadow-lg">
+            <!-- Optional Close Button -->
+            <button id="closeMenuBtn" class="text-gray-500 text-2xl absolute top-4 right-4">
+                &times;
+            </button>
+
+            <div class="mt-20 p-4 text-2xl hover:text-purple-400 hover:bg-purple-100 rounded-xl">
+               <a href="/#home" class="text-gray-700 hover:text-purple-600 font-medium">
+            Home
+            </a>
+            </div>
+            <div class="p-4 text-2xl  hover:text-purple-400 hover:bg-purple-100"><a href="/#about" class="text-gray-700 hover:text-purple-600 font-medium">
+            About
+            </a></div>
+            <div class="p-4 text-2xl  hover:text-purple-400 hover:bg-purple-100"><a href="/#projects" class="text-gray-700 hover:text-purple-600 font-medium">
+            Portfolio
+            </a></div>
+            <div class="p-4 text-2xl  hover:text-purple-400 hover:bg-purple-100"> <a href="/#contact" class="text-gray-700 hover:text-purple-600 font-medium">
+            Contact
+            </a></div>
+            
+            </div>
+        </div>
+    </section>
+</header>
+
+    <div id="content">
+        {% block content %}
+        
+        {% endblock %}
+    </div>
+
+<div>
+  <div
+    class="w-full h-[80vh] bg-cover bg-center flex items-center justify-center px-4 md:px-0"
+    style="background-image: url({% static 'images/purp.jpg' %})"
+  >
+    <div class="max-w-4xl text-center md:text-left">
+      <h2 class="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight">
+        Let’s skyrocket your <br class="hidden sm:block" />
+        next project together
+      </h2>
+      <p class="mt-4 sm:mt-6 text-white text-base sm:text-lg max-w-xl mx-auto md:mx-0">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Turpis scelerisque purus eu quis lacus, nibh pharetra.
+      </p>
+      <button class="mt-6 sm:mt-8 bg-white text-[#7051ef] font-semibold px-6 py-3 rounded-xl shadow-md hover:bg-gray-100 transition">
+        <a href="/#contact">
+            Contact me
+        </a>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<script>
+    const openBtn = document.getElementById("openMenuBtn");
+    const closeBtn = document.getElementById("closeMenuBtn");
+    const drawer = document.getElementById("menuDrawer");
+    const backdrop = document.getElementById("menuBackdrop");
+
+    openBtn.addEventListener("click", () => {
+      drawer.classList.remove("-translate-x-full");
+      backdrop.classList.remove("hidden");
+    });
+
+    closeBtn.addEventListener("click", () => {
+      drawer.classList.add("-translate-x-full");
+      backdrop.classList.add("hidden");
+    });
+
+    backdrop.addEventListener("click", () => {
+      drawer.classList.add("-translate-x-full");
+      backdrop.classList.add("hidden");
+    });
+
+  const navLinks = document.querySelectorAll("#menuDrawer a");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      drawer.classList.add("-translate-x-full");
+      backdrop.classList.add("hidden");
+    });
+  });
+
+</script>
+</body>
+</html>

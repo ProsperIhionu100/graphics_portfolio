@@ -1,0 +1,9 @@
+env/
+media/
+static/
+__pycache__/
+node_modules/
+package-lock.json
+package.json
+.env
+db.sqlite3
