@@ -14,7 +14,7 @@
 
       <p
         class='text-2xl mt-4 md:text-4xl lg:text-2xl lg:mt-10 text-left md:text-center lg:text-left text-[#3a395e] font-medium'>
-        Hey there, I’m Agozie, a passionate and detail-obsessed graphic designer <br> with a sharp eye for clean, compelling visuals that connect brands to people.
+        Hey there, I’m Agozie, a passionate and detail-obsessed <br> graphic designer  with a sharp eye for clean, compelling <br> visuals that connect brands to people.
       </p>
       <div class=''>
         <div class='grid grid-cols-1 md:grid-cols-2 sm:gap-4 lg:w-130 mt-6 w-full'>
@@ -41,8 +41,8 @@
 
       <h1 class="text-4xl font-bold mt-8 text-[#3a395e]">My Expertise</h1>
 
-      <p class="mt-4 text-xl">
-        From logos and posters to album covers, flyers, and social media graphics, <br> I help businesses and individuals bring their vision to life through clean, <br> professional design. My work blends creativity with purpose, ensuring every piece connects with its audience.
+      <p class="mt-4 text-2xl text-[#3a395e]">
+        From logos and posters to album covers, flyers, and social media graphics, <br> I help businesses and individuals bring their vision to life through clean, <br> professional design. 
       </p>
     </div>
     <div class="lg:flex justify-between md:grid md:grid-cols-2 gap-4">
@@ -103,11 +103,11 @@
 
           <div>
             <hr class="w-30  ml-0 border-t-8 border-[#7051ef] my-6 md:mx-auto lg:mx-0"/>
-            <h1 class="font-bold text-4xl ">My Portfolio</h1>
+            <h1 class="font-bold text-4xl text-[#3a395e] ">My Portfolio</h1>
           </div>
 
           <div>
-            <p class='mt-4 text-xl'>Welcome to my portfolio — a curated collection of projects that reflect my design thinking, style, and versatility. <br> Each piece below showcases different aspects of what I offer — from branding <br> and logo design to editorial layouts, album art, flyers, posters, and social media content.</p>
+            <p class='mt-4 text-2xl text-[#3a395e]'>Welcome to my portfolio, a curated collection of projects that reflect my design thinking, style, and versatility. Each piece below showcases different aspects of what I offer.</p>
           </div>
 
         </div>
@@ -148,7 +148,7 @@
         </div> */} -->
     <div class='grid lg:grid-cols-3 gap-4 mt-10'>
       {% for comp in company %}
-      <div class="bg-white rounded-3xl overflow-hidden shadow-xl mx-4 md:mx-0 ">
+      <div class="bg-white  rounded-3xl overflow-hidden shadow-xl mx-4 md:mx-0 ">
         <!-- {/* Image */} -->
         <div>
           <a href="{% url "company" comp.slug %}"><img
@@ -165,8 +165,8 @@
           <!-- {/* Tag */} -->
 
           <!-- {/* Title */} -->
-          <h3 class="text-3xl font-bold text-gray-900 mb-3 hover:text-[#7051ef]">
-            {{comp.name}}
+          <h3 class="text-3xl font-bold text-[#3a395e] mb-3 hover:text-[#7051ef]">
+            <a href="{% url "company" comp.slug %}">{{comp.name}}</a>
           </h3>
 
           <!-- {/* Description */} -->
@@ -294,7 +294,7 @@
         <h2 class="text-7xl md:text-7xl font-bold text-gray-900">let's work together</h2>
       </div>
       <p class="text-gray-600 mb-6 mt-10 text-xl">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Turpis scelerisque purus eu quis lacus, nibh pharetra elit.
+        Whether you’re starting a new brand, launching a campaign, or just need stunning visuals I’m here to help bring your ideas to life.
       </p>
       <div class="space-y-4 text-xl">
         <div class="flex items-center gap-3">
