@@ -6,7 +6,7 @@
     <a rel="icon" type="image/svg+xml" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href=" {% if debug %}{% static "dist/styles.css" %}{% else %}{% static "dist/styles.min.css" %}{% endif %} ">
+    <link rel="stylesheet" href="{% static "dist/styles.css" %}">
     <title>{% block title %}My amazing site{% endblock %}</title>
       <style>
         html {
