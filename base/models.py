@@ -1,4 +1,5 @@
 from django.db import models
+from django_resized import ResizedImageField
 
 # Create your models here.
 
@@ -10,7 +11,7 @@ class Company(models.Model):
     
     slug = models.SlugField(max_length=250, unique=True)
     
-    image = models.ImageField(upload_to='images/', null=True)
+    image = ResizedImageField(size=[600, 600], quality=85, upload_to='images/', null=True)
     
     
     class Meta:
@@ -30,7 +31,7 @@ class Project(models.Model):
     
     slug = models.SlugField(max_length=250, unique=True, null=True)
     
-    image = models.ImageField(upload_to='images/', null=True)
+    image = ResizedImageField(size=[600, 600], quality=85, upload_to='images/', null=True)
     
     class Meta:
         
